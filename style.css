@@ -1,0 +1,235 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: "Inter", sans-serif;
+    background: #f8f9fa;
+    padding: 20px;
+    min-height: 100vh;
+}
+.container {
+    max-width: 520px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    position: relative;
+}
+.header {
+    background: linear-gradient(135deg, #fff, #fff);
+    padding: 20px 20px 0 20px;
+    text-align: center;
+    /* border-bottom: 1px solid #e0e0e0; */
+}
+.title {
+    color: #FF6B82;
+    font-size: 24px;
+    font-weight: 700;
+}
+.pricing-options {
+    padding: 20px 20px 0 20px;
+}
+.option-card {
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    margin-bottom: 18px;
+    padding: 30px 18px 30px 18px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.option-card.popular {
+    border-color: #FF6B82;
+    background: #fff5f7;
+}
+.popular-tag {
+    position: absolute;
+    top: -14px;
+    right: 18px;
+    background: #FF6B82;
+    color: #fff;
+    padding: 6px 18px 6px 18px;
+    border-radius: 0 0 8px 8px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    z-index: 2;
+}
+.option-main-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.radio-wrapper {
+    margin-right: 14px;
+    margin-top: 2px;
+}
+.radio-wrapper input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    appearance: none;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    background: #fff;
+}
+.radio-wrapper input[type="radio"]:checked {
+    border-color: #FF6B82;
+}
+.radio-wrapper input[type="radio"]:checked::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    background: #FF6B82;
+    border-radius: 50%;
+}
+.unit-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    min-width: 0;
+}
+.unit-info-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.unit-text {
+    font-weight: 600;
+    color: #333;
+    font-size: 17px;
+    margin-right: 8px;
+}
+.discount-badge {
+    background: #FF6B82;
+    color: #fff;
+    padding: 2px 9px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-left: 2px;
+}
+.price-label {
+    font-size: 13px;
+    color: #666;
+    margin-top: 2px;
+    margin-left: 2px;
+    font-weight: 500;
+}
+.price-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    min-width: 120px;
+}
+.current-price {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 2px;
+}
+.original-price {
+    font-size: 14px;
+    color: #bdbdbd;
+    text-decoration: line-through;
+}
+.customization-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 10px;
+    padding: 0px 40px;
+
+}
+.row-number {
+    font-size: 13px;
+    color: #666;
+    font-weight: 600;
+    width: 28px;
+}
+.size-select, .color-select {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.size-select label, .color-select label {
+    font-size: 12px;
+    color: #666;
+    font-weight: 500;
+    margin-bottom: 1px;
+}
+.size-select select, .color-select select {
+    padding: 6px 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 15px;
+    background: #fff;
+    min-width: 80px;
+}
+.customization-row .size-select label,
+.customization-row .color-select label {
+    margin-bottom: 0;
+}
+.summary {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    /* border-top: 1px solid #e9ecef; */
+    padding-top: 16px;
+    font-size: 17px;
+}
+.free-delivery {
+    color: #FF6B82;
+    font-weight: 600;
+    font-size: 16px;
+}
+.total-price {
+    font-weight: 700;
+    font-size: 17px;
+    color: #333;
+}
+.add-to-cart-btn {
+    background: #FF6B82;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    margin: 0 20px 20px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    width: calc(100% - 40px);
+    transition: background 0.2s ease;
+}
+.add-to-cart-btn:hover {
+    background: #ff5a7a;
+}
+.footer {
+    text-align: right;
+    padding: 12px 20px 12px 20px;
+    color: #999;
+    font-size: 12px;
+    background: #f8f9fa;
+    font-style: italic;
+}
+.option-card.selected {
+    border-color: #FF6B82;
+}
+.option-card:not(.popular):hover {
+    border-color: #FF6B82;
+}
+@media (max-width: 600px) {
+    .container { max-width: 100%; }
+    .summary { flex-direction: column; gap: 8px; }
+    .footer { text-align: center; }
+}

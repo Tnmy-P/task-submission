@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YAY! It's BOGO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">YAY! It's BOGO</h1>
+        </div>
+        <div class="pricing-options">
+            <div class="option-card" id="card1" data-units="1" tabindex="0">
+                <div class="option-main-row">
+                    <div class="radio-wrapper">
+                        <input type="radio" id="unit1" name="units" value="1" checked>
+                    </div>
+                    <div class="unit-info">
+                        <div class="unit-info-row">
+                            <span class="unit-text">1 Unit</span>
+                            <span class="discount-badge">10% Off</span>
+                        </div>
+                        <div class="price-label">Standard Price</div>
+                    </div>
+                    <div class="price-info">
+                        <span class="current-price">$10.00 USD</span>
+                        <span class="original-price">$24.00 USD</span>
+                    </div>
+                </div>
+                <div class="customization-row" style="display:none;">
+                    <span class="row-number">#1</span>
+                    <div class="size-select">
+                        <label>Size</label>
+                        <select>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                    </div>
+                    <div class="color-select">
+                        <label>Colour</label>
+                        <select>
+                            <option>Black</option>
+                            <option>Gray</option>
+                            <option>White</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="option-card popular" id="card2" data-units="2" tabindex="0">
+                <div class="popular-tag">MOST POPULAR</div>
+                <div class="option-main-row">
+                    <div class="radio-wrapper">
+                        <input type="radio" id="unit2" name="units" value="2">
+                    </div>
+                    <div class="unit-info">
+                        <div class="unit-info-row">
+                            <span class="unit-text">2 Unit</span>
+                            <span class="discount-badge">20% Off</span>
+                        </div>
+                    </div>
+                    <div class="price-info">
+                        <span class="current-price">$18.00 USD</span>
+                        <span class="original-price">$24.00 USD</span>
+                    </div>
+                </div>
+                <div class="customization-row" style="display:none;">
+                    <span class="row-number">#1</span>
+                    <div class="size-select">
+                        <label>Size</label>
+                        <select>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                    </div>
+                    <div class="color-select">
+                        <label>Colour</label>
+                        <select>
+                            <option>Black</option>
+                            <option>Gray</option>
+                            <option>White</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="customization-row" style="display:none;">
+                    <span class="row-number">#2</span>
+                    <div class="size-select">
+                        <label>Size</label>
+                        <select>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                    </div>
+                    <div class="color-select">
+                        <label>Colour</label>
+                        <select>
+                            <option>Black</option>
+                            <option>Gray</option>
+                            <option>White</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="option-card" id="card3" data-units="3" tabindex="0">
+                <div class="option-main-row">
+                    <div class="radio-wrapper">
+                        <input type="radio" id="unit3" name="units" value="3">
+                    </div>
+                    <div class="unit-info">
+                        <div class="unit-info-row">
+                            <span class="unit-text">3 Unit</span>
+                            <span class="discount-badge">30% Off</span>
+                        </div>
+                    </div>
+                    <div class="price-info">
+                        <span class="current-price">$24.00 USD</span>
+                        <span class="original-price">$24.00 USD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="summary">
+            <span class="free-delivery">Free Delivery</span>
+            <span class="total-price">Total : $10.00 USD</span>
+        </div>
+        <button class="add-to-cart-btn">
+            + Add to Cart
+        </button>
+        <div class="footer">
+            <span>© Powered by Pumper</span>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
